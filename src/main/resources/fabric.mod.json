@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "stream_discs",
+  "version": "${version}",
+  "name": "3790‘s Stream Disc",
+  "description": "通过铁砧将唱片绑定到在线视频，在原版唱片机中播放音频，并支持小规模联机同步。当前支持 Bilibili 点播视频。",
+  "authors": [
+    "3790"
+  ],
+  "license": "MIT",
+  "icon": "assets/stream_discs/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.zbw3790.streamdiscs.StreamDiscs"
+    ],
+    "client": [
+      "com.zbw3790.streamdiscs.client.StreamDiscsClient"
+    ]
+  },
+  "mixins": [
+    "stream_discs.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "minecraft": "26.2",
+    "java": ">=25"
+  }
+}
